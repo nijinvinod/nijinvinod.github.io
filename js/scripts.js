@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	console.log("ready");
 	$("body").keydown(function(e) {
         if(e.keyCode == 27) { //escape
             utils.closePopUp();

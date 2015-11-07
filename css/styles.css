@@ -7,6 +7,11 @@
 .clearfix {
   clear: both; }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
 a {
   text-decoration: none; }
 
@@ -15,9 +20,6 @@ body {
 
 .home {
   position: relative; }
-  @media screen and (max-width: 768px) {
-    .home svg.myImg {
-      display: none; } }
   .home .face-logo {
     display: none; }
     @media screen and (max-width: 768px) {
@@ -26,6 +28,7 @@ body {
   .home .nameSlot {
     position: absolute;
     top: 50%;
+    z-index: 10;
     height: 174px;
     width: calc(100% - 300px);
     text-align: center;

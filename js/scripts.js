@@ -6,7 +6,8 @@ $(document).ready(function(){
         }
     });
 
-    utils.moveLinksUp();
+	utils.loadTransitions();
+
 });
 
 var utils = {
@@ -16,11 +17,12 @@ var utils = {
 
 	moveLinksUp: function(){
 		var links = $(".links a");
-		var i = 0;
-		// setInterval(function(){
-		// 	$(links[i]).addClass("moveUp");
-		// 	console.log(i);
-		// 	i++;
-		// },500);
+		$(links).addClass("moveUp");
+	},
+
+	loadTransitions: function(){
+		utils.moveLinksUp();
+		$(".nameSlot .name").addClass("moveLeft");
+		$(".nameSlot .role").addClass("moveRight");
 	}
 };

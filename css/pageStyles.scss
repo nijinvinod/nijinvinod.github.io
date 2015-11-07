@@ -30,9 +30,14 @@
 			font-size:2.8em;
 			letter-spacing:0.1em;
 			font-weight:300;
+			margin-right: -250px;
+			@include transitionRule(1s);
 			@media screen and (max-width: $mobile){
 				padding:10px 0;
 				font-size:2.4em;
+			}
+			&.moveLeft{
+				margin-right:0;
 			}
 		}
 		.role{
@@ -41,8 +46,13 @@
 			border-bottom:1px solid;
 			padding:10px 7em;
 			letter-spacing:0.085em;
+			margin-left: -250px;
+			@include transitionRule(1s);
 			@media screen and (max-width: $mobile){
 				padding:10px 20px;
+			}
+			&.moveRight{
+				margin-left:0;
 			}
 		}
 		.links{
@@ -51,7 +61,7 @@
 				display:inline-block;
 				font-size:1.8em;
 				color: #A80000;
-				margin-top:20px;
+				margin-top:50px;
 				@include transitionRule(1s);
 				&.moveUp{
 					margin-top:0;

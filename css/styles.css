@@ -19,7 +19,8 @@ body {
   overflow-x: hidden; }
 
 .home {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   .home .face-logo {
     display: none; }
     @media screen and (max-width: 768px) {

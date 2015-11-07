@@ -10,6 +10,9 @@
 a {
   text-decoration: none; }
 
+body {
+  overflow-x: hidden; }
+
 .home {
   position: relative; }
   .home .nameSlot {
@@ -35,6 +38,12 @@ a {
       padding: 15px 15px;
       display: inline-block;
       font-size: 1.8em;
-      color: #A80000; }
+      color: #A80000;
+      margin-top: 20px;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s; }
+      .home .nameSlot .links a.moveUp {
+        margin-top: 0; }
 
 /*# sourceMappingURL=styles.css.map */

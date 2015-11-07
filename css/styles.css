@@ -25,7 +25,7 @@ body {
     right: -150px; }
     @media screen and (max-width: 768px) {
       .home svg.myImg {
-        right: -240px; } }
+        right: -150px; } }
   .home .face-logo {
     display: none; }
     @media screen and (max-width: 768px) {

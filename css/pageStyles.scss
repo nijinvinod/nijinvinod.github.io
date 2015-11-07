@@ -1,5 +1,16 @@
 .home{
 	position:relative;
+	svg.myImg{
+		@media screen and (max-width: $mobile){
+			display:none;
+		}
+	}
+	.face-logo{
+		display: none;
+		@media screen and (max-width: $mobile){
+			display:block;
+		}
+	}
 	.nameSlot{
 		position:absolute;
 		top:50%;
@@ -7,12 +18,22 @@
 		width: calc(100% - 300px);
 		text-align:center;
 		margin-top:-87px;
+		@media screen and (max-width: $mobile){
+			position:relative;
+			top:0;
+			width:90%;
+			margin:0 auto;
+		}
 		.name{
 			display:inline-block;
 			padding:10px 2em;
 			font-size:2.8em;
 			letter-spacing:0.1em;
 			font-weight:300;
+			@media screen and (max-width: $mobile){
+				padding:10px 0;
+				font-size:2.4em;
+			}
 		}
 		.role{
 			display:inline-block;
@@ -20,6 +41,9 @@
 			border-bottom:1px solid;
 			padding:10px 7em;
 			letter-spacing:0.085em;
+			@media screen and (max-width: $mobile){
+				padding:10px 20px;
+			}
 		}
 		.links{
 			a{
@@ -31,6 +55,9 @@
 				@include transitionRule(1s);
 				&.moveUp{
 					margin-top:0;
+				}
+				@media screen and (max-width: $mobile){
+					font-size:1.4em;
 				}
 			}
 		}

@@ -15,6 +15,14 @@ body {
 
 .home {
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .home svg.myImg {
+      display: none; } }
+  .home .face-logo {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .home .face-logo {
+        display: block; } }
   .home .nameSlot {
     position: absolute;
     top: 50%;
@@ -22,18 +30,31 @@ body {
     width: calc(100% - 300px);
     text-align: center;
     margin-top: -87px; }
+    @media screen and (max-width: 768px) {
+      .home .nameSlot {
+        position: relative;
+        top: 0;
+        width: 90%;
+        margin: 0 auto; } }
     .home .nameSlot .name {
       display: inline-block;
       padding: 10px 2em;
       font-size: 2.8em;
       letter-spacing: 0.1em;
       font-weight: 300; }
+      @media screen and (max-width: 768px) {
+        .home .nameSlot .name {
+          padding: 10px 0;
+          font-size: 2.4em; } }
     .home .nameSlot .role {
       display: inline-block;
       border-top: 1px solid;
       border-bottom: 1px solid;
       padding: 10px 7em;
       letter-spacing: 0.085em; }
+      @media screen and (max-width: 768px) {
+        .home .nameSlot .role {
+          padding: 10px 20px; } }
     .home .nameSlot .links a {
       padding: 15px 15px;
       display: inline-block;
@@ -45,5 +66,8 @@ body {
       transition: 1s; }
       .home .nameSlot .links a.moveUp {
         margin-top: 0; }
+      @media screen and (max-width: 768px) {
+        .home .nameSlot .links a {
+          font-size: 1.4em; } }
 
 /*# sourceMappingURL=styles.css.map */

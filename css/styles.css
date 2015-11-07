@@ -21,6 +21,11 @@ body {
 .home {
   position: relative;
   overflow-x: hidden; }
+  .home svg.myImg {
+    right: -150px; }
+    @media screen and (max-width: 768px) {
+      .home svg.myImg {
+        right: -240px; } }
   .home .face-logo {
     display: none; }
     @media screen and (max-width: 768px) {

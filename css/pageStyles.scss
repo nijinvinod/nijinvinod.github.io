@@ -3,8 +3,9 @@
 	position:relative;
 	overflow-x:hidden;	
 	svg.myImg{
+		right:-150px;
 		@media screen and (max-width: $mobile){
-			
+			right:-240px;
 		}
 	}
 	.face-logo{
